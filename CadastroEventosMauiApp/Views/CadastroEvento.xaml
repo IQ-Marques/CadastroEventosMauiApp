@@ -1,0 +1,132 @@
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="CadastroEventosMauiApp.Views.CadastroEvento"
+    Title="Cadastro de Evento"
+    BackgroundColor="#EEF3F8">
+
+    <ScrollView>
+
+        <VerticalStackLayout
+            Padding="20"
+            Spacing="15">
+
+            <Frame
+                BackgroundColor="#1E3A5F"
+                CornerRadius="15"
+                Padding="20">
+
+                <Label
+                    Text="Cadastro de Evento"
+                    FontSize="28"
+                    FontAttributes="Bold"
+                    TextColor="White"
+                    HorizontalOptions="Center"/>
+
+            </Frame>
+
+            <Frame
+                BackgroundColor="White"
+                CornerRadius="12"
+                Padding="15">
+
+                <VerticalStackLayout>
+
+                    <Label
+                        Text="Nome do Evento"
+                        TextColor="#1E3A5F"
+                        FontAttributes="Bold"/>
+
+                    <Entry
+                        x:Name="txtNome"
+                        Placeholder="Digite o nome do evento"
+                        TextColor="Black"/>
+
+                    <Label
+                        Text="Local do Evento"
+                        TextColor="#1E3A5F"
+                        FontAttributes="Bold"/>
+
+                    <Entry
+                        x:Name="txtLocal"
+                        Placeholder="Digite o local do evento"
+                        TextColor="Black"/>
+
+                </VerticalStackLayout>
+
+            </Frame>
+
+            <Frame
+                BackgroundColor="White"
+                CornerRadius="12"
+                Padding="15">
+
+                <VerticalStackLayout>
+
+                    <Label
+                        Text="Data de Início"
+                        TextColor="#1E3A5F"
+                        FontAttributes="Bold"/>
+
+                    <DatePicker
+                        x:Name="dtInicio"
+                        TextColor="Black"/>
+
+                    <Label
+                        Text="Data de Término"
+                        TextColor="#1E3A5F"
+                        FontAttributes="Bold"/>
+
+                    <DatePicker
+                        x:Name="dtFim"
+                        TextColor="Black"/>
+
+                </VerticalStackLayout>
+
+            </Frame>
+
+            <Frame
+                BackgroundColor="White"
+                CornerRadius="12"
+                Padding="15">
+
+                <VerticalStackLayout>
+
+                    <Label
+                        Text="Número de Participantes"
+                        TextColor="#1E3A5F"
+                        FontAttributes="Bold"/>
+
+                    <Entry
+                        x:Name="txtParticipantes"
+                        Keyboard="Numeric"
+                        TextColor="Black"/>
+
+                    <Label
+                        Text="Custo por Participante"
+                        TextColor="#1E3A5F"
+                        FontAttributes="Bold"/>
+
+                    <Entry
+                        x:Name="txtCusto"
+                        Keyboard="Numeric"
+                        TextColor="Black"/>
+
+                </VerticalStackLayout>
+
+            </Frame>
+
+            <Button
+                Text="Cadastrar Evento"
+                BackgroundColor="#2D89EF"
+                TextColor="White"
+                FontAttributes="Bold"
+                HeightRequest="50"
+                CornerRadius="10"
+                Clicked="Cadastrar_Clicked"/>
+
+        </VerticalStackLayout>
+
+    </ScrollView>
+
+</ContentPage>

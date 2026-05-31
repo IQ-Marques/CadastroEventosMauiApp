@@ -1,0 +1,105 @@
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="CadastroEventosMauiApp.Views.ResumoEvento"
+    Title="Resumo do Evento"
+    BackgroundColor="#EEF3F8">
+
+    <ScrollView>
+
+        <VerticalStackLayout
+            Padding="20"
+            Spacing="15">
+
+            <Frame
+                BackgroundColor="#1E3A5F"
+                CornerRadius="15"
+                Padding="20">
+
+                <Label
+                    x:Name="lblNome"
+                    FontSize="28"
+                    FontAttributes="Bold"
+                    TextColor="White"
+                    HorizontalOptions="Center"/>
+
+            </Frame>
+
+            <Frame
+                BackgroundColor="White"
+                CornerRadius="12"
+                Padding="15">
+
+                <VerticalStackLayout Spacing="10">
+
+                    <Label
+                        x:Name="lblLocal"
+                        FontSize="16"
+                        TextColor="Black"/>
+
+                    <Label
+                        x:Name="lblParticipantes"
+                        FontSize="16"
+                        TextColor="Black"/>
+
+                    <Label
+                        x:Name="lblInicio"
+                        FontSize="16"
+                        TextColor="Black"/>
+
+                    <Label
+                        x:Name="lblFim"
+                        FontSize="16"
+                        TextColor="Black"/>
+
+                    <Label
+                        x:Name="lblDuracao"
+                        FontSize="16"
+                        TextColor="Black"/>
+
+                    <Label
+                        x:Name="lblCustoParticipante"
+                        FontSize="16"
+                        TextColor="Black"/>
+
+                </VerticalStackLayout>
+
+            </Frame>
+
+            <Frame
+                BackgroundColor="#DFF5E1"
+                CornerRadius="12"
+                Padding="15">
+
+                <VerticalStackLayout>
+
+                    <Label
+                        Text="Custo Total do Evento"
+                        FontSize="18"
+                        FontAttributes="Bold"
+                        HorizontalOptions="Center"/>
+
+                    <Label
+                        x:Name="lblTotal"
+                        FontSize="26"
+                        FontAttributes="Bold"
+                        TextColor="Green"
+                        HorizontalOptions="Center"/>
+
+                </VerticalStackLayout>
+
+            </Frame>
+
+            <Button
+                Text="Voltar"
+                BackgroundColor="#2D89EF"
+                TextColor="White"
+                FontAttributes="Bold"
+                CornerRadius="10"
+                Clicked="Voltar_Clicked"/>
+
+        </VerticalStackLayout>
+
+    </ScrollView>
+
+</ContentPage>
